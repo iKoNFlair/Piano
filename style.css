@@ -104,7 +104,7 @@ background-image: url("images/HD-wallpaper-horizontal-wooden-boards-macro-brown-
 {
 
     .piano-frame{
-        width: 80%;
+        width: 85%;
         height: 30%;
         display: flex;
         align-items: center;
@@ -117,7 +117,6 @@ background-image: url("images/HD-wallpaper-horizontal-wooden-boards-macro-brown-
 .inner-frame{
     width: 100%;
     height: 80%;
-    /* transform: ; */
 }
 
 .white-keys{
@@ -132,7 +131,7 @@ background-image: url("images/HD-wallpaper-horizontal-wooden-boards-macro-brown-
 .white-key{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    width: 10px;
+    width: 8px;
     height: 80%;
     border: 2px solid;
     background-color: aliceblue;
