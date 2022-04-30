@@ -130,14 +130,12 @@ function music(key){
    else if(key >= 8 && key < 16)
    {  
        key = key - 8;
-       console.log(key);
        var audio = new Audio("sounds/B" + key + ".mp3");
        audio.play();
    }
    else if(key >= 16 && key < 24)
    {  
        key = key - 16;
-    //    console.log(key);
        var audio = new Audio("sounds/C" + key + ".mp3");
        audio.play();
    }
