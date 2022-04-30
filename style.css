@@ -87,6 +87,9 @@ background-image: url("images/HD-wallpaper-horizontal-wooden-boards-macro-brown-
     border: none;
     background-color: rgb(7, 197, 211); 
     color: rgb(0, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .stop-play{
@@ -97,6 +100,9 @@ background-image: url("images/HD-wallpaper-horizontal-wooden-boards-macro-brown-
     transform: translateX(-20%);
     border-radius: 30px;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -148,7 +154,7 @@ background-image: url("images/HD-wallpaper-horizontal-wooden-boards-macro-brown-
     /* box-shadow: 0px 2px 5px 1px grey; */
 }
 
-@media screen and (max-width : 1000px)
+@media screen and (max-width : 800px),(min-width : 1000px)
 {
     .piano-frame{
         height: 20rem;
@@ -170,7 +176,7 @@ background-image: url("images/HD-wallpaper-horizontal-wooden-boards-macro-brown-
 }
 
 
-@media screen and (max-width : 800px)
+@media screen and  (max-width : 800px)
 {
 
 .piano-frame{
@@ -188,6 +194,10 @@ background-image: url("images/HD-wallpaper-horizontal-wooden-boards-macro-brown-
     height: 90%;
 }
 
+.inner-frame{
+    width: 100%;
+}
+
 .outer-frame .btn-text{
     font-size: 6px;
 }
@@ -198,7 +208,7 @@ background-image: url("images/HD-wallpaper-horizontal-wooden-boards-macro-brown-
 }
 
 .black-key{
-    width: 1%;
+    width:4%;
     height: 50%;
 }
 
@@ -238,15 +248,25 @@ background-image: url("images/HD-wallpaper-horizontal-wooden-boards-macro-brown-
 
 }
 
-@media screen and (max-width:355px)
+@media screen and (max-width:390px)
 {
 
     .piano-frame{
         width: 98%;
         height: 30%;
+
     }
     .white-key{
-        width: 1px;
+        width: 20px;
         height: 80%;
+        border-radius: 6px;
+
+    }
+    .black-key{
+        width: 20px;
+        height: 60%;
+        border-radius: 6px;
+        box-shadow: 0px 1px 10px 1px grey
+
     }
 }
