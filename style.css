@@ -1,15 +1,15 @@
 body{
-    background : linear-gradient(rgb(0, 195, 255),rgb(140, 222, 255));
-     height: 43rem;
+    background : rgb(0, 195, 255);
      display: flex;
      justify-content: center;
      align-items: center;
+     min-height: 90vh;
 }
 
 
 .piano-frame{
-width: 80%;
-height: 80%;
+width: 75%;
+height: 70%;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -27,10 +27,11 @@ background-image: url("images/HD-wallpaper-horizontal-wooden-boards-macro-brown-
 
 .outer-frame{
     width: 100%;
-    height: 20%;
+    height: 5rem;
     background-color: rgba(5, 5, 5, 0.534);
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .buttonSlider{
@@ -54,9 +55,14 @@ background-image: url("images/HD-wallpaper-horizontal-wooden-boards-macro-brown-
     border-bottom-left-radius: 3rem;
     background-color: black;
     transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .on-off span{
+    text-align: center;
+    font-size: 0.5rem;
     color: white;
 }
 
@@ -72,15 +78,40 @@ background-image: url("images/HD-wallpaper-horizontal-wooden-boards-macro-brown-
     box-shadow: 0px 0px 10px 2px rgb(230, 9, 9);
 }
 
+
+.auto-play{
+    width: 10%;
+    height: 40%;
+    transform: translateX(-20%);
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(7, 197, 211); 
+    color: rgb(0, 255, 255);
+}
+
+.stop-play{
+    background-color: red;
+    color: rgb(255, 255, 255);
+    width: 10%;
+    height: 40%;
+    transform: translateX(-20%);
+    border-radius: 30px;
+    border: none;
+
+}
+
 .inner-frame{
     width: 100%;
     height: 80%;
-    /* transform: ; */
+}
+
+.keys{
+    width: 100%;
 }
 
 .white-keys{
     width: 100%;
-    height: 30rem;
+    height: 25rem;
     border: none;
     text-align: center;
     transform: translateY(8%);
@@ -89,31 +120,99 @@ background-image: url("images/HD-wallpaper-horizontal-wooden-boards-macro-brown-
 .white-key{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    width: 6%;
+    width: 6.5%;
     height: 80%;
     border: 2px solid;
     background-color: aliceblue;
 }
 
-.active-key{
+.black-key{
+    position: absolute;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 6%;
+    height: 50%;
+    border: 2px solid;
     background-color: rgb(0, 0, 0);
-    box-shadow: 0px 2px 5px 1px grey;
+    transform: translateX(-50%);
+    box-shadow: 0px 3px 10px 1px rgb(114, 114, 114);
 }
 
-@media screen and (max-width : 450px)
+.active-whitekey{
+    background-color: rgb(0, 0, 0);
+    /* box-shadow: 0px 2px 5px 1px grey; */
+}
+
+.active-blackkey{
+    background-color: rgb(110, 110, 110);
+    /* box-shadow: 0px 2px 5px 1px grey; */
+}
+
+@media screen and (max-width : 1000px)
+{
+    .piano-frame{
+        height: 20rem;
+    }
+
+    .inner-frame{
+        transform: translateY(-15px);
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    .white-key{
+        height: 50%;
+    }
+    .black-key{
+        height: 30%;
+    }
+}
+
+
+@media screen and (max-width : 800px)
 {
 
-    .piano-frame{
-        width: 85%;
-        height: 30%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        background-image: url("images/HD-wallpaper-horizontal-wooden-boards-macro-brown-wooden-planks-brown-wooden-texture-wood-planks-horizontal-wooden-planks-wooden-textures-wooden-backgrounds-brown-wooden-boar.jpg");
-        }
+.piano-frame{
+    width: 90%;
+    height: 23%;
+}
 
-    
+.outer-frame{
+    width: 100%;
+    height: 3rem;
+}
+
+.on-off{
+    width: 50%;
+    height: 90%;
+}
+
+.outer-frame .btn-text{
+    font-size: 6px;
+}
+
+.white-key{
+    width: 100%;
+    height: 20%;
+}
+
+.black-key{
+    width: 1%;
+    height: 50%;
+}
+
+.buttonSlider{
+    width: 10%;
+    height: 40%;
+}
+
+.on-off{
+    width: 50%;
+    height: 100%;
+    border: none;
+}
+
 .inner-frame{
     width: 100%;
     height: 80%;
@@ -131,9 +230,23 @@ background-image: url("images/HD-wallpaper-horizontal-wooden-boards-macro-brown-
 .white-key{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    width: 8px;
+    width: 5%;
     height: 80%;
     border: 2px solid;
     background-color: aliceblue;
 }
+
+}
+
+@media screen and (max-width:355px)
+{
+
+    .piano-frame{
+        width: 98%;
+        height: 30%;
+    }
+    .white-key{
+        width: 1px;
+        height: 80%;
+    }
 }
